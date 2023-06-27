@@ -1,0 +1,128 @@
+:root{
+    --width-container: 27rem;
+    --height-container: 17rem;
+    --box-shadow: 0 0 1rem 0.1rem rgba(174, 177, 243, 0.3);
+    --border-radius: 1rem;
+    --padding: 2rem;
+    --border-top: 0.4rem solid;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.text{
+    /* height: 10rem; */
+    padding: var(--padding);
+    width: var(--width-container);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    /* text-align: justify; */
+}
+.supervisor{
+    position: relative;
+    height: var(--height-container);
+    padding: var(--padding);
+    width: var(--width-container);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    border-top: var(--border-top);    
+    border-top-color: hsl(180, 62%, 55%);
+    margin-bottom: 2rem;
+
+}
+.team-builder {
+    position: relative;
+    height: var(--height-container);
+    width: var(--width-container);
+    padding: var(--padding);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    border-top: var(--border-top);    
+    border-top-color: red;
+}
+.karma {
+    position: relative;
+    height: var(--height-container);
+    width: var(--width-container);
+    padding: var(--padding);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    border-top: var(--border-top);    
+    border-top-color: hsl(34, 97%, 64%);
+
+
+}
+.middle-container{
+    gap: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+
+}
+.calculator{
+    position: relative;
+    height: var(--height-container);
+    width: var(--width-container);
+    padding: var(--padding);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    border-top: var(--border-top);    
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+img{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+p {
+    font-size: 1.1rem;
+    color: rgb(176, 170, 170);
+}
+
+@media screen and (min-width: 1200px) {
+    .main-container{
+        width: 100rem;
+        display: flex;
+    }
+    .main-wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .text {
+        width: 40%;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .supervisor-wrap{
+        display: flex;
+        align-items: center;
+    }
+    .calculator-wrap{
+        display: flex;
+        align-items: center;
+    }
+    .middle-container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem ;
+        margin-bottom: 2rem ;
+    }
+}
